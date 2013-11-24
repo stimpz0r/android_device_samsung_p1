@@ -51,10 +51,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_COPY_FILES += \
 	device/samsung/p1/init.p1.rc:root/init.p1.rc \
 	device/samsung/p1/ueventd.p1.rc:root/ueventd.p1.rc \
-	device/samsung/p1-common/init.recovery.rc:root/init.recovery.p1.rc \
+	device/samsung/p1/twrp.init.rc:root/init.recovery.p1.rc \
 	device/samsung/p1/init.p1.usb.rc:root/init.p1.usb.rc \
 	device/samsung/p1/init.p1.usb.rc:recovery/root/usb.rc \
-	device/samsung/p1/fstab.p1:root/fstab.p1
+	device/samsung/p1/fstab.p1:root/fstab.p1 \
+	device/samsung/p1/twrp.fstab:root/twrp.fstab
 
 # RIL
 # Permissions
